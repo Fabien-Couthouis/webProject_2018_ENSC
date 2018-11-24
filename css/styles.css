@@ -1,0 +1,483 @@
+@font-face {
+  font-family: "yougSerif";
+  src: url("fonts/youngSerif.otf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  position: relative;
+  min-height: 100%;
+}
+header {
+  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+}
+
+.section {
+  padding: 3rem;
+  margin-left: 50px;
+}
+
+footer {
+  border-top: 1px solid #ccc;
+  padding: 1rem;
+  height: 60%;
+  bottom: 0;
+  width: 100%;
+  color: rgb(243, 243, 243);
+  font-family: "Robotto";
+}
+footer a {
+  color: rgb(243, 243, 243);
+  text-decoration: underline;
+}
+
+.index {
+  background-image: url("../images/index.jpg");
+}
+.campaign {
+  background-image: url("../images/campaign.jpg");
+  background-size: cover;
+}
+.tests {
+  background-image: url("../images/tests.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: top;
+  width: 100%;
+  height: 100%;
+  font-family: Arial, Helvetica;
+  letter-spacing: 0.02em;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+}
+.table .viewCampaignTable {
+  background: rgba(255, 255, 255, 0);
+}
+.table .viewExpTable {
+  background: rgba(197, 225, 248, 0.3);
+  /* background: rgba(247, 220, 189, 0.3); */
+}
+.viewcampaignCard {
+  margin: auto;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  background: rgba(117, 117, 117, 0.295);
+}
+.login-img {
+  width: 96px;
+  height: 96px;
+  margin: 0 auto 10px;
+  display: block;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+.form-auth .form-control:focus {
+  border-color: rgb(104, 145, 162);
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),
+    0 0 8px rgb(104, 145, 162);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgb(104, 145, 162);
+}
+.btn.btn-auth {
+  background-color: rgb(104, 145, 162);
+  padding: 0px;
+  font-weight: 700;
+  font-size: 14px;
+  height: 36px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  border: none;
+  -o-transition: all 0.218s;
+  -moz-transition: all 0.218s;
+  -webkit-transition: all 0.218s;
+  transition: all 0.218s;
+}
+
+.btn.btn-auth:hover,
+.btn.btn-auth:active,
+.btn.btn-auth:focus {
+  background-color: #4d90fe;
+}
+.authentificationPage {
+  /*background-image: linear-gradient(rgb(104, 145, 162), rgb(182, 182, 182));*/
+  background-image: url(../images/login.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: top;
+  width: 100%;
+  height: 100%;
+  font-family: Arial, Helvetica;
+  letter-spacing: 0.02em;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+}
+
+.registerLink {
+  color: rgb(104, 145, 162);
+  text-decoration: underline;
+}
+
+/* Onglets de page campaign et login */
+.page-tabs:enabled {
+  background: inherit;
+  color: #000000;
+  border-color: rgb(0, 0, 0);
+  background-color: rgba(255, 255, 255, 0.432);
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.nav-tabs .page-tabs.active {
+  color: #000000;
+  border-color: rgb(28, 28, 28);
+  background: inherit;
+  background-color: rgba(255, 255, 255, 0.432);
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  font-weight: bold;
+  border-width: 1.5px;
+}
+
+.registerLink:hover,
+.registerLink:active,
+.registerLink:focus {
+  color: rgb(12, 97, 33);
+}
+.authDiv {
+  background: inherit;
+  background-color: rgba(255, 255, 255, 0.432);
+  margin: 0 auto 25px;
+  margin-top: 75px;
+  padding: 20px 25px 30px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  width: 40%;
+}
+
+.user-icon {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  border-radius: 50%;
+  background-size: contain;
+  background-image: url(https://pbs.twimg.com/profile_images/725321660484583424/ArQ4fM3k.jpg);
+}
+
+.linkCampaign {
+  font-weight: bold;
+  color: rgba(179, 51, 0, 0.616);
+}
+.linkCampaign2 {
+  color: rgba(250, 87, 11, 0.76);
+  font-style: oblique;
+}
+.linkCampaign:hover {
+  font-weight: bold;
+  color: rgba(179, 51, 0, 0.199);
+}
+.linkCampaign2:hover {
+  color: rgba(179, 51, 0, 0.199);
+}
+.getLink:hover {
+  text-decoration: none;
+  opacity: 0.7;
+}
+
+.carousel {
+  width: 90%;
+  height: 90%;
+  margin: auto;
+  /* text-align: center; */
+  /* just in case there no content*/
+  /* shadows and rounded borders */
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.caroussel-img {
+  width: 1080px;
+  height: 620px;
+  opacity: 0.95;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  outline: black;
+  background-size: 100%, 100%;
+  border-radius: 50%;
+  background-image: none;
+}
+
+.carousel-control-next-icon:after {
+  content: ">";
+  font-size: 55px;
+  color: rgb(150, 150, 150);
+}
+
+.carousel-control-prev-icon:after {
+  content: "<";
+  font-size: 55px;
+  color: rgb(150, 150, 150);
+}
+
+.carousselText {
+  color: rgb(80, 80, 80);
+  font-family: "youngSerif";
+}
+.carousselText2 {
+  color: rgb(94, 93, 93);
+  font-family: "youngSerif";
+}
+.carousselText3 {
+  color: rgb(243, 243, 243);
+  font-family: "youngSerif";
+}
+
+.nav-link {
+  color: white;
+  opacity: 0.9;
+  text-align: left;
+}
+
+.nav-icon {
+  color: white;
+  font-size: 32px;
+}
+.fa-cog {
+  color: black;
+}
+.fa-cog:hover {
+  color: rgb(124, 146, 172);
+}
+.fa-sign-out {
+  color: black;
+}
+.fa-sign-out:hover {
+  color: rgb(124, 146, 172);
+}
+.fa-check-circle {
+  color: green;
+}
+.fa-exclamation-circle {
+  color: red;
+}
+.connect {
+  font-size: 24px;
+}
+
+/* links */
+.navbar a:hover {
+  /* color: rgb(124, 146, 172); */
+  color: rgb(172, 147, 124);
+}
+.navbar a:active,
+.navbar img:active {
+  color: rgb(165, 117, 12);
+}
+.userMenuText {
+  color: black;
+  font-family: Arial, sans-serif;
+}
+.userMenuText:hover {
+  color: rgb(124, 146, 172);
+}
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:visited {
+  background-color: rgb(12, 83, 165);
+  border-color: rgb(12, 83, 165);
+}
+
+.description {
+  text-indent: 15px;
+  color: rgba(255, 255, 255, 0.842);
+}
+.descriptionTooltip {
+  text-decoration: underline;
+  color: blue;
+}
+.login-icon {
+  color: black;
+  /* background-color: rgb(209, 209, 209); */
+  margin: float-left;
+  font-size: 25px;
+}
+
+/* Forms */
+.custom-radios div {
+  display: inline-block;
+}
+.custom-radios input[type="radio"] {
+  display: none;
+}
+.custom-radios input[type="radio"] + label {
+  color: #333;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+.custom-radios input[type="radio"] + label span {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin: -1px 4px 0 0;
+  vertical-align: middle;
+  cursor: pointer;
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.33);
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  line-height: 44px;
+}
+.custom-radios input[type="radio"] + label span img {
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+.custom-radios input[type="radio"].color-5 + label span {
+  background-color: #05a705;
+}
+.custom-radios input[type="radio"].color-4 + label span {
+  background-color: #83e283;
+}
+.custom-radios input[type="radio"].color-3 + label span {
+  background-color: #f1c40f;
+}
+.custom-radios input[type="radio"].color-2 + label span {
+  background-color: #e7723c;
+}
+.custom-radios input[type="radio"].color-1 + label span {
+  background-color: #df1313;
+}
+.custom-radios input[type="radio"]:checked + label span img {
+  opacity: 1;
+}
+
+.agreeDisagree {
+  font-weight: bold;
+}
+.susValue {
+  font-style: italic;
+  margin-left: 1px;
+  font-size: 12px;
+  opacity: 0.8;
+}
+
+.campaign-icon {
+  color: black;
+}
+
+.adminNames {
+  color: rgba(255, 0, 0, 0.767);
+}
+.newCampaign {
+  margin: auto;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  background: rgba(117, 117, 117, 0.295);
+}
+
+.slidecontainer {
+  width: 100%; /* Width of the outside container */
+}
+
+/* The slider itself */
+.slider {
+  -webkit-appearance: none; /* Override default CSS styles */
+  width: 60%; 
+  height: 20px; /* Specified height */
+  border-radius: 5px;
+  background: #d3d3d3; /* Grey background */
+  outline: none; /* Remove outline */
+  opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: 0.2s; /* 0.2 seconds transition on hover */
+  transition: opacity 0.2s;
+}
+
+/* Mouse-over effects */
+.slider:hover {
+  opacity: 1; /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  width: 25px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  border-radius: 50%;
+  background: #4caf50; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+}
+
+.slider::-moz-range-thumb {
+  width: 25px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  border-radius: 50%;
+  background: #4caf50; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+}
+
+.suggestion {
+  padding: 3px 20px;
+
+  margin-top: 4px;
+  list-style-type: none;
+  border-bottom: 1px solid #d4d4d4;
+}
+.suggestionList {
+  border: 1px solid #ccc;
+}
+.suggestion:hover {
+  /*when hovering an item:*/
+  background-color: #e9e9e9;
+  cursor: pointer;
+}
+.suggestion-active {
+  /*when navigating through the items using the arrow keys:*/
+  background-color: DodgerBlue !important;
+  color: #ffffff;
+}
+.fa-minus-circle {
+  color: red;
+  cursor: pointer;
+}
+
+.invisible1 {
+  visibility: hidden;
+  height: 0px;
+}
