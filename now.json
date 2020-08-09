@@ -3,7 +3,7 @@
   "builds": [
     {
       "src": "*.php",
-      "use": "@juicyfx/php@canary"
+      "use": "vercel-php@0.1.0"
     },
     {
       "src": "!*.php",
